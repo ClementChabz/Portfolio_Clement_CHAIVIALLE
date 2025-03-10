@@ -443,6 +443,15 @@ body{
 
     }
 @media screen and (max-width: 480px){
+
+    .main__container{
+        border: 2px solid  #fff;
+    }
+    .main__content{
+        border: 2px solid  #fff;
+        margin-left: 0px;
+    }
+    
     .main__content h1{
         font-size: 2rem;
         margin-top: 3rem;
@@ -506,6 +515,7 @@ body{
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    
 }
 
 .cube__wrapper::after {
@@ -592,5 +602,19 @@ body{
 		}
 	}
 }
+
+@media screen and (max-width: 480px){
+
+    .cube__wrapper{
+        border: 2px solid #fff;
+        height: 440px;
+        width: 100%;
+    }
+
+    .cube__container{
+        top: -80px;
+    }
+}
+
 
 /* fin cube */
