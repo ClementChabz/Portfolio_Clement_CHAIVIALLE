@@ -47,6 +47,20 @@ h2.main{
 }
 
 
+@media screen and (max-width: 480px){
+    h1.main{
+        /* border: 2px solid #111111; */
+        top: 0px;
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+
+    h2.main {
+        bottom: -5px;
+        font-size: 1.5rem;
+    }
+}
+
 .slider{
     position: relative;
     width: 100%;
@@ -71,6 +85,13 @@ h2.main{
     /* border: 2px solid #000;    */
 }
 
+@media screen and (max-width: 480px){
+    .item{
+        width: 200px;
+        height:75%
+    }
+
+}
 
 .item h1{
     font-size: 2rem;
@@ -119,4 +140,24 @@ h2 a{
 #next{
     left:unset;
    right: 50px;
+}
+
+@media screen and (max-width: 480px){
+    
+    #next,#prev {
+    text-shadow: 1px 1px 0px black, 
+    -1px -1px 0px black,  
+    1px -1px 0px black,
+    -1px 1px 0px black; 
+    }
+
+    #next{
+    right:unset;
+    right:0;
+}
+
+    #prev{
+    left: unset;
+    left: 0px;
+
 }
