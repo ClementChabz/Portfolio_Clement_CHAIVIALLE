@@ -17,3 +17,4 @@ document.querySelectorAll(".footer__link--items h2").forEach((heading) => {
         )
         .join("");
 });
+

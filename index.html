@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clement CHAIVIALLE's website</title>
-    <link rel="stylesheet" href="Styles/styles.css" />
-    <link rel="stylesheet" href="Styles/services.css" />
-    <link rel="stylesheet" href="Styles/footer.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> <!-- this is used for icons hover effects ! -->
+    <link rel="stylesheet" href="/Styles/styles.css" />
+    <link rel="stylesheet" href="/Styles/services.css" />
+    <link rel="stylesheet" href="/Styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- this is used for icons hover effects ! -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/a3bc1d6cad.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,9 +35,11 @@
     <!-- Navbar section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="" id="navbar__logo"
-          ><i class="fa-solid fa-shield-halved logo-icon"></i>Clement CHAIVIALLE</a
-        >
+        <a href="" id="navbar__logo">
+          <img src="images/logowhite.svg" alt="Logo" />
+          Clément CHAIVIALLE
+        </a>
+
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -38,13 +50,13 @@
             <a href="/" class="navbar__links"> Home </a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links"> Tech </a>
+            <a href="/resume.html" class="navbar__links"> Resume </a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links"> Products </a>
+            <a href="/" class="navbar__links"> About_Me </a>
           </li>
           <li class="navbar__btn">
-            <a href="/" class="nav_button"> Sign Up </a>
+            <a href="/resume.html" class="nav_button"> Get started ! </a>
           </li>
         </ul>
       </div>
@@ -54,77 +66,80 @@
     <div class="main">
       <div class="main__container">
         <div class="main__content">
-          <h1>Clement CHAIVIALLE</h1>
+          <h1>Clément CHAIVIALLE</h1>
           <h2>PORTFOLIO</h2>
-          <p>Get to know me</p>
-          <button class="main__btn"><a href="/">Get started</a></button>
+          <p
+            class="animate__animated animate__pulse animate__slower 3s animate__infinite infinite"
+          >
+            Get to know me
+          </p>
+          <button class="main__btn">
+            <a href="/resume.html">Get started</a>
+          </button>
         </div>
 
-        <!-- <div class="main__img--container">
-          <img src="images/pic1.svg" alt="pic" id="main__img" />
-        </div> -->
-        
-      <div class="cube__wrapper">
-        <div class="cube__container">
-          <div class="cube">
-            <div style="--x:-1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
+        <div class="cube__wrapper">
+          <!-- Source::https://prismic.io/blog/css-text-animations -->
+          <div class="cube__container">
+            <div class="cube">
+              <div style="--x: -1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 0; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
             </div>
-            <div style="--x:0; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
+            <div class="cube">
+              <div style="--x: -1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 0; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
             </div>
-            <div style="--x:1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-          </div>
-          <div class="cube">
-            <div style="--x:-1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-            <div style="--x:0; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-            <div style="--x:1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-          </div>
-          <div class="cube">
-            <div style="--x:-1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-            <div style="--x:0; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
-            </div>
-            <div style="--x:1; --y:0;">
-              <span style="--i:3;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:1;"></span>
+            <div class="cube">
+              <div style="--x: -1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 0; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
+              <div style="--x: 1; --y: 0">
+                <span style="--i: 3"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 1"></span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
 
     <!-- Services Section -->
     <div class="services">
-      <h1>Endless possibilities</h1>
+      <h1>Hover Me</h1>
       <div class="services__container">
         <div class="services__card">
           <h2>Experience Bliss</h2>
@@ -189,29 +204,30 @@
         <div class="social_media--wrap">
           <div class="hover-underline">
             <a href="/" id="footer__logo">
-              <i class="fasfa-gem"></i>Clement CHAIVIALLE</a
+              <i class="fasfa-gem"></i>Clément CHAIVIALLE</a
             >
+            <!-- Source::https://prismic.io/blog/css-text-animations -->
           </div>
           <p class="website__rights">
-            © Clement CHAIVIALLE 2025. All rights reserved
+            © Clément CHAIVIALLE 2025. All rights reserved
           </p>
 
           <div class="social__icon">
+            <!-- Source::https://prismic.io/blog/css-text-animations -->
             <ul>
               <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f icon"></i>    </a>
+                <a href="#"> <i class="fab fa-facebook-f icon"></i> </a>
               </li>
               <li>
                 <a href="#"><i class="fab fa-twitter icon"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                <a href="#"><i class="fab fa-linkedin-in icon"></i></a>
+              </li>
               <li>
-                <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+                <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+              </li>
             </ul>
-
-            </a>
           </div>
         </div>
       </div>

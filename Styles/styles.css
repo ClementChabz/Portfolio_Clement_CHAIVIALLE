@@ -34,68 +34,76 @@ body{
 
 .navbar__container{
     display: flex;
-    flex-grow: 1;
     justify-content: space-between;
-    height: 80px;
     z-index: 1;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 0 25px;
+    backdrop-filter: blur(3px);
+    filter:contrast(1.2);
     /* border: 2px solid #fff; */
-    ;
 }
 
+.navbar__container img{
+    max-height: 55px;
+    margin-right: 1rem;
+}
 
 #navbar__logo{
-    background-color: #ffffff; /* Couleur de fond de secours */
-    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); Dégradé de fond */
-    background-size: 100%; /* Taille de l'image de fond */
-    filter: brightness(2);
-    -webkit-background-clip: text; /* Clip de fond pour le texte sur Webkit */
-    -moz-background-clip: text; /* Clip de fond pour le texte sur Mozilla */
-    -webkit-text-fill-color: transparent; /* Remplissage de texte transparent sur Webkit */
-    -moz-text-fill-color: transparent; /* Remplissage de texte transparent sur Mozilla */
+    color: #ffffff;
     display: flex; /* Affichage en flexbox */
     align-items: center; /* Alignement vertical centré */
+    justify-content: center;
     cursor: pointer; /* Curseur en forme de main */
     text-decoration: none; /* Pas de soulignement */
     font-size: 2rem; /* Taille de la police */
     font-weight: 700;
+    border-radius: 5px;
+    height: 100%;
+    padding: 5px 20px;
 
-    
+    /* border: 2px solid #fff; */
 }
 
 
 .logo-icon {
-    margin-right: 2rem; /* Ajustez la valeur selon l'espace désiré */
+    margin-right: 2rem; 
 
 }
 
-.fa-gem{
-    margin-right: 0.5rem;
-}
 
 .navbar__menu{
     display: flex;
     align-items: center;
+    wrap: nowrap;
     list-style: none;
     text-align: center;
-    gap: 2rem;
+    gap: 1.75rem;
     /* border: 2px solid #fff; */
 }
 
-.navbar__item{
-    height: 80px;
-}
 
 .navbar__links{
     color: #fff;
     display: flex;
+    /* border: 2px solid #fff; */
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 0.5rem 1rem;
     height: 100%;
+    font-size: 1.62rem;
+    font-weight: 500;
+    border-radius: 6px;
+    /* backdrop-filter: blur(10px);
+    filter: contrast(1.2); */
+
+    &:hover{
+        font-weight: 700;
+        transform: translateY(-2px); /* Translation de 2px vers le haut */
+        transition: all 0.3s ease; /* Transition */ 
+    }
 }
 
 .navbar__btn{
@@ -104,6 +112,7 @@ body{
     align-items: center;
     padding: 0rem 1rem;
     width: 100%;
+    font-weight: 500;
 }
 
 .nav_button{
@@ -111,7 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 5px;
     height: 100%;  
     width: 100%;
     border: none;
@@ -128,13 +137,28 @@ body{
     transition: all 0.3s ease; /* Transition */
 }
 
-.navbar__links:hover{
-    color: #f77062; /* Couleur du texte au survol */
-    transform: translateY(-2px); /* Translation de 2px vers le haut */
-    transition: all 0.3s ease; /* Transition */ 
+@media screen and (max-width: 1300px){
+
+    #navbar__logo{
+        color: #fff;
+        display: flex; /* Affichage en flexbox */
+        align-items: center; /* Alignement vertical centré */
+        justify-content: center;
+        cursor: pointer; /* Curseur en forme de main */
+        text-decoration: none; /* Pas de soulignement */
+        font-size: 1.5rem; /* Taille de la police */
+        font-weight: 700;
+        /* backdrop-filter: blur(10px);
+        filter:contrast(1.2); */
+        border-radius: 5px;
+        height: 100%;
+        padding: 0px 15px;
+        /* border: 2px solid #fff; */
+    }
+
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1050px){
     .navbar__container{
         display: flex;
         justify-content: space-between;
@@ -187,9 +211,8 @@ body{
 
     .navbar__links{
         text-align: center;
-        padding: 2rem;
         width: 100%;
-        display: table;
+        display: flex;
     }
 
     #mobile-menu {
@@ -255,34 +278,37 @@ body{
     background-color: #141414;
     width: 100%;
 
-    padding: 0 50px;
+
     /* border: 2px solid #fff; */
-    /* min-height: 800px; */
-    /* max-height: 00px; */
     overflow: hidden; /* Empêche le dépassement */
 
 }
 
-/* .main__content{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px solid #8f5656;
-} */
+
 
 .main__content h1{
+    margin-top: 0.5rem;
     font-size: 4rem;
     flex-shrink: 1;
-    background-color: #ff8177; /* Couleur de fond de secours */
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); /* Dégradé de fond */
-    background-size: 100%; /* Taille de l'image de fond */
+    background-color: #fff; /* Couleur de fond de secours */
+    background: linear-gradient(45deg, #989898, #ffffff, #4f4f4f, #f8f8fa, #9a9a9a, #616363, #ffffff, #b3b3fe, #b1b1b1);
+    background-size: 500%;
+    animation: animatecube 20s infinite linear;
     /* border: 2px solid #fff; */
     -webkit-background-clip: text; /* Clip de fond pour le texte sur Webkit */
     -moz-background-clip: text; /* Clip de fond pour le texte sur Mozilla */
     -webkit-text-fill-color: transparent; /* Remplissage de texte transparent sur Webkit */
     -moz-text-fill-color: transparent; /* Remplissage de texte transparent sur Mozilla */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+
+    /* &:hover{
+        box-shadow: 12px 12px 12px #080808,-10px -10px 10px  #202020;
+        transition: all 0.5s ease;
+    } */
+
 }
+
 
 
 .main__content h2{
@@ -304,6 +330,8 @@ body{
     font-weight: 700;
     color: #fff;
 }
+
+
 
 .main__btn{
     position: relative;
@@ -380,12 +408,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: clamp(300px, 90%, 1200px);
     /* border: 2px solid #8f5656; */
 }
 
 @media screen and (max-width: 758px){
     .main__container{
-        display: grid;
+        display: flex;
         grid-template-columns: auto;
         align-items: center;
         justify-self: center;
