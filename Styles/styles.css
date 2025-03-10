@@ -110,7 +110,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0rem 1rem;
     width: 100%;
     font-weight: 500;
 }
@@ -156,6 +155,8 @@ body{
         /* border: 2px solid #fff; */
     }
 
+
+
 }
 
 @media screen and (max-width: 1050px){
@@ -167,6 +168,12 @@ body{
         width: 100%;
         max-width: 1300px;
         padding: 0;
+    }
+
+    .nav_button{
+
+        width: 40%;
+
     }
 
     .navbar__menu{
@@ -181,6 +188,7 @@ body{
         height:50vh;
         z-index: -1;
         background: #131313;
+        /* border: 2px solid #fff; */
     }
 
     .navbar__menu.active{
@@ -221,12 +229,18 @@ body{
         right: 5%;
         transform: translate(5%, 20%);
     }
-
     .navbar__btn{
-        padding-bottom: 2rem;
+        margin-bottom:1rem;
+        /* border: 2px solid #fff; */
     }
      
-    .button{
+    .navbar__btn{
+        width: 100%;
+        justify-content: center;
+
+
+    }
+    .navbar__button{
         display: flex;
         justify-content: center;
         align-items: center;
