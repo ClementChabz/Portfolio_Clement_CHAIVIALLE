@@ -444,14 +444,6 @@ body{
     }
 @media screen and (max-width: 480px){
 
-    .main__container{
-        border: 2px solid  #fff;
-    }
-    .main__content{
-        border: 2px solid  #fff;
-        margin-left: 0px;
-    }
-    
     .main__content h1{
         font-size: 2rem;
         margin-top: 3rem;
@@ -606,7 +598,7 @@ body{
 @media screen and (max-width: 480px){
 
     .cube__wrapper{
-        border: 2px solid #fff;
+        /* border: 2px solid #fff; */
         height: 440px;
         width: 100%;
     }
