@@ -296,8 +296,8 @@ body {
     margin-top: 0.5rem;
     font-size: 4rem;
     flex-shrink: 1;
-    background-color: #fff; /* Couleur de fond de secours */
-    background: linear-gradient(45deg, #5a3f99, #9d75f9, #a464b9, #c478ad);
+    background-color: #1a1a1a; /* Couleur de fond de secours */
+    
 
     background-size: 500%;
     animation: slidingcolortext 5s infinite linear;
@@ -322,9 +322,9 @@ body {
 .main__content h2 {
     position: relative;
     font-size: 4rem;
-    background-color: #ffffff; 
-    background-image: linear-gradient(to bottom left, #4b3780, #7e9cff);
-    background-size: 100%; 
+    background: linear-gradient(45deg, #5a3f99, #9d75f9, #a464b9, #c478ad);
+    animation: slidingcolortext 3s infinite linear;
+    background-size: 500%; 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
