@@ -12,13 +12,6 @@
 .services h1 {
     background-color:#ffffff ;
     background-image: linear-gradient(to bottom left, #3e2a74, #a586c0);
-
-
-
-
-
-
-
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -26,10 +19,12 @@
     -moz-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent; 
-    /* backdrop-filter: blur(4px);
-    filter:contrast(1.2); */
     border-radius: 1rem;
     padding: 5px 5px;
+    backdrop-filter: blur(4px);
+    filter:contrast(1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /* border: 2px solid #f6c9d3; */
 }
 
@@ -43,7 +38,7 @@
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 15px;
+   
     background-image: linear-gradient(
         to bottom,
         rgba(0,0,0,0) 0%,
@@ -51,6 +46,9 @@
     background-size: cover;
     position: relative;
     color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .services__card:nth-child(2){
@@ -78,6 +76,7 @@
     position:absolute;
     top: 400px;
     left: 30px;
+    
 }
 
 .services__card button{
@@ -86,7 +85,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #6a4faa;
     cursor: pointer;
     position: absolute;
     top: 440px;
@@ -101,21 +100,15 @@
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-
-    }
+@media screen and (max-width: 960px) {
     .services h1 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
     .services h1 {
         font-size: 1.2rem;
     }
@@ -123,4 +116,4 @@
     .services__card {
         width: 300px;
     }
-} */
+}
