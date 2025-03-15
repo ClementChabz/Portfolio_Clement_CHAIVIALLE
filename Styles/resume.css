@@ -4,7 +4,7 @@
 
 
 body.resume {
-    background-image:linear-gradient(to top right, #9d75f9,#fde4ea);
+    background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
     background-color: #fde4ea;
     min-height: 100vh;
     margin: 0;
@@ -136,10 +136,9 @@ h2.main{
 .item p {
     position: absolute;
     font-size: 1rem;
-    bottom: 2%;
-    left:36%;
+    bottom: 5%;
+    left: 36%;
     font-weight: 600;
-    text-align: center;
     font-family: 'Kumbh Sans', sans-serif;
     /* border: 2px solid #000; */
 }

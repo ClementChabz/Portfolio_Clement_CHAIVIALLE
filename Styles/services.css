@@ -2,23 +2,22 @@
 
 .services {
     color: black;
-    background: #141414;
     display:flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    /* border:2px solid #9d75f9 */
 }
 
 .services h1 {
-    background-color:#ff8177 ;
-    background-image: linear-gradient(
-        to right,
-        #ff8177 0%,
-        #ff867a 0%,
-        #ff8c7f 21%,
-        #f99185 52%,
-        #cf556c 78%,
-        #b12a5b 100%);
+    background-color:#ffffff ;
+    background-image: linear-gradient(to bottom left, #3e2a74, #a586c0);
+
+
+
+
+
+
 
     background-size: 100%;
     margin-bottom: 5rem;
@@ -27,6 +26,11 @@
     -moz-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent; 
+    /* backdrop-filter: blur(4px);
+    filter:contrast(1.2); */
+    border-radius: 1rem;
+    padding: 5px 5px;
+    /* border: 2px solid #f6c9d3; */
 }
 
 .services__container {
