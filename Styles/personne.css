@@ -1,0 +1,97 @@
+/* * {
+    outline: 1px solid red;
+  } */
+
+
+  body {
+    background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
+    background-color: #fde4ea;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1.main {
+    position: absolute;
+    font-size: 3rem;
+    top: 2vh;
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 6px;
+    border-width: 3px;
+
+    &:hover{
+        animation: textwiggle 2s linear infinite ;
+        scale: 1.05;
+        box-shadow: #cfbdf8 1px 1px 1px;
+    }
+
+}
+
+
+@keyframes textwiggle {
+    0% { scale: 1; }
+    50% { scale: 1.05; }
+    100% { scale: 1; }
+}
+
+h2.main{
+    position: absolute;
+    font-size: 2rem;
+    bottom: 2vh;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-width: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    &:hover{
+        scale: 1.05;
+        box-shadow: #c4acfd 2px 2px 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1.main{
+        /* border: 2px solid #111111; */
+        top: 2vh;
+        padding: 10px 20px;
+        font-size: 2.5rem;
+    }
+
+    h2.main {
+        bottom: 2vh;
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    h1.main{
+        /* border: 2px solid #111111; */
+        top: 0px;
+        padding: 10px 20px;
+        font-size: 1.75rem;
+    }
+
+    h2.main {
+        bottom: -5px;
+        font-size: 1.5rem;
+    }
+}
+
+
+h2 a{
+    text-decoration: none;
+    color: #fff;
+}

@@ -18,6 +18,29 @@
     font-size: 2rem;
     /* border: 2px solid #fff; */
 }
+#footer__logo {
+    color: white;  /* Couleur de texte blanche */
+    text-decoration: none;  /* Retirer la décoration du lien */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+
+#name {
+    font-size: 2rem;  /* Taille de texte 2rem pour "Nom Prénom" */
+    font-weight: bold;  /* Mettre en gras, si désiré */
+}
+
+#contact__tel,#contact__mail {
+    font-size: 1rem;  /* Taille de texte 1rem pour le téléphone et l'email */
+}
+
+#footer__logo i {
+    margin-right: 10px;  /* Ajout d'un petit espace à droite de l'icône, si nécessaire */
+}
+
+
+
 
 /* hover pour le footer */
 .footer__logo a:hover {
@@ -40,7 +63,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #ff0000, #00ffff);
+    background: linear-gradient(to right, #5a1760, #ec5bf9);
     bottom: -5px;
     left: 0;
     transform: scaleX(0);

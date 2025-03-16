@@ -35,7 +35,6 @@ h1.main {
 }
 
 
-
 @keyframes textwiggle {
     0% { scale: 1; }
     50% { scale: 1.05; }
@@ -43,17 +42,16 @@ h1.main {
 }
 
 h2.main{
-    position: absolute;
     font-size: 2rem;
     bottom: 2vh;
     color: #fff;
-    text-align: center;
     padding: 10px 20px;
     margin-bottom: 20px;
     border-radius: 6px;
     border-width: 3px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 1;
 
     &:hover{
         scale: 1.05;
@@ -71,7 +69,7 @@ h2.main{
 
     h2.main {
         bottom: 2vh;
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
 }
@@ -87,7 +85,7 @@ h2.main{
 
     h2.main {
         bottom: -5px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -95,4 +93,13 @@ h2.main{
 h2 a{
     text-decoration: none;
     color: #fff;
+}
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: auto;
 }

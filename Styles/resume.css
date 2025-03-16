@@ -93,8 +93,10 @@ h2.main{
 
 .slider{
     position: relative;
+    top:-10px;
     width: 100%;
     margin-top:3.5rem ;
+    padding-top: 20px;
     display: flex;
     height: 500px;
     display: flex;
@@ -117,6 +119,11 @@ h2.main{
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /* border: 2px solid #000;    */
+
+    &:hover {
+        scale: 1.04;
+        transition: all 0,6s ease;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -142,6 +149,22 @@ h2.main{
     font-size: 1rem;
     font-weight: 600;
     font-family: 'Kumbh Sans', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid #000; */
+}
+
+#retour__exp {
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 100;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#retour__exp a {
+    text-decoration: underline;
     /* border: 2px solid #000; */
 }
 
