@@ -2,10 +2,6 @@
     outline: 1px solid red;
   } */
 
-  html {
-    height: 100%;
-}
-
 body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
     background-color: #fde4ea;
@@ -88,9 +84,10 @@ h2.main{
 
     h2.main {
         bottom: -5px;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
+
 
 
 
