@@ -2,6 +2,9 @@
     outline: 1px solid red;
   } */
 
+html{
+    height: auto;
+}
 
 body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
@@ -41,6 +44,88 @@ h1.main{
     50% { scale: 1.05; }
     100% { scale: 1; }
 }
+
+
+.coor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.coor p{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width:clamp(300px, 30%, 400px) ;
+}
+
+.coor a {
+
+    gap: 10px;
+    color: #fff;
+}
+
+.pic__wrapper {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 40%;
+    z-index: 0;
+    border: 2px solid #21d4fd;
+    backdrop-filter: blur(4px);
+    filter:contrast(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    
+    &:hover{
+        transition: all 0.6s ease;
+        scale: 1.05;
+    }
+    
+}
+
+
+@keyframes slidingcolortext {
+    0% { background-position: 0 0; }
+    50% { background-position:100% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* .pic__container img{
+    max-width: 100%;
+} */
+
+.pic__container {
+    /* border: 2px solid #fff; */
+    height: 100%;
+    width: 100%;
+    border-radius: 40%;
+    overflow: hidden;
+    filter:contrast(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pic__container img{
+    width: 100%;
+    height: auto;
+    filter:contrast(1.1);
+}
+
+
 
 h2.main{
     font-size: 2rem; 
@@ -86,6 +171,15 @@ h2.main{
     h2.main {
         bottom: -5px;
         font-size: 1.5rem;
+    }
+
+    .pic__wrapper{
+        height: 300px;
+        width: 300px;
+    }
+
+    .coor p {
+        font-size: 1.25rem;
     }
 }
 

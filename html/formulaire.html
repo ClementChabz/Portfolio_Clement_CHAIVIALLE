@@ -7,14 +7,81 @@
     <link rel="stylesheet" href="../Styles/formulaire.css" />
   </head>
   <body>
-    <p>
-      Merci d'avoir pris le temps de me donner votre avis.<br />
-      Chaque retour est une opportunité d’apprentissage. <br />
-      J’apprécie sincèrement vos reamrques !
-    </p>
+    <h1 class="main">Feedback</h1>
+    <div class="hero">
+      <form
+        class="formulaire"
+        action="https://formspree.io/f/mldjdpak"
+        method="post"
+      >
+        <p id="identity">Vous êtes : <span class="star">*</span></p>
+        <div class="options-container">
+          <div class="option">
+            <label for="employeur">Un employeur</label>
+            <input
+              type="radio"
+              name="choix"
+              id="employeur"
+              value="Un employeur"
+              required
+            />
+          </div>
+          <div class="option">
+            <label for="autre" id="autre">Autre</label>
+            <input
+              type="radio"
+              name="choix"
+              id="autre"
+              value="Autre"
+              required
+            />
+          </div>
+        </div>
+
+        <p id="avis">
+          Que pensez-vous de votre expérience sur ce site ?<span class="star"
+            >*</span
+          >
+        </p>
+        <div class="options-container">
+          <div class="option">
+            <span class="cursor">1</span>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="5"
+              id="slider"
+              name="slider"
+              required
+            />
+            <span class="cursor">10</span>
+          </div>
+        </div>
+
+        <p id="avis">Souhaiteriez-vous partager une remarque ?</p>
+        <div class="options-container">
+          <div class="option">
+            <textarea
+              id="feedback"
+              name="feedback"
+              placeholder="Votre message..."
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" id="submit" value="Envoyer !" />
+      </form>
+
+      <p class="merci">
+        Merci pour votre retour. <br />
+        Chaque avis est une chance d’améliorer et d’apprendre. <br />
+        J’apprécie vraiment vos remarques !
+      </p>
+    </div>
 
     <div class="footer">
       <h2 class="main"><a href="../index.html">Back to Main</a></h2>
+      <h2 class="main"><a href="./contact.html">Coordonnées</a></h2>
     </div>
   </body>
 </html>
