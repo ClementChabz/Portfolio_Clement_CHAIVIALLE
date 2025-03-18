@@ -1,17 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L'humain</title>
     <link rel="stylesheet" href="../Styles/humain.css" />
   </head>
-  <body>
-    <h1 class="main">Clément : L'humain</h1>
+
+  <body class="personne">
+    <h1 class="main">Clément : L'Humain</h1>
+
+    <div class="section">
+      <img
+        src="../images/clement.png"
+        class="toggle-img"
+        alt="En savoir plus sur moi"
+      />
+      <div class="content" id="content1">
+        <p>
+          Je suis une personne <b>passionnée</b> par la technologie. J'aime
+          explorer de nouveaux sujets, me perfectionner et créer des choses.
+          <br /><br />
+          <b>Humain</b> et extraverti, j'apprécie le contact social et évoluer
+          dans un environnement convivial. Mes valeurs fondamentales incluent
+          l'empathie, la résilience, l'intelligence sociale et l'engagement.
+          <br /><br />
+          Ce qui me rend heureux au quotidien, c'est de me sentir utile et
+          d'apporter une <b>valeur ajoutée</b>. Un environnement propice me
+          motive et m'encourage à donner le meilleur de moi-même. Une citation
+          qui me guide est :
+        </p>
+        <p class="citation">
+          <u
+            >"Never underestimate the details of
+            <span class="small">small</span> things"</u
+          >
+          <br />
+          <span class="auteur">Matt Haig.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img
+        src="../images/dev.svg"
+        class="toggle-img"
+        onclick="toggleContent('content2')"
+        alt="Ma passion pour l'apprentissage"
+      />
+      <div class="content" id="content2">
+        <p>
+          Issu d'une formation d'ingénieur, j'ai développé de solides
+          compétences techniques qui seront détaillées dans la section suivante.
+          <br /><br />
+          Néanmoins, je crois fermement à l'importance de
+          <b>lier l'humain au technicien</b>. <br /><br />
+          J'ai pu m'enrichir de compétences en communication, en gestion de
+          projet et en relations interpersonnelles lors de mes divers projets et
+          expériences, notamment à l'international.
+          <br /><br />
+          C'est par ailleurs pour cet aspect <u>humain</u> que je me suis formé
+          sur la santé mentale et physique pendant plus de 60 heures. C'est un
+          sujet, souvent laissé au second plan, qui me tiens à coeur.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img
+        src="../images/hobbies.svg"
+        class="toggle-img"
+        onclick="toggleContent('content3')"
+        alt="Mes valeurs humaines"
+      />
+      <div class="content" id="content3">
+        <p>
+          Pour ce qui est de mes loisirs, j'aime beaucoup <b>lire</b>. Que ce
+          soit de la fiction ou des livres de formation, du français ou de
+          l'anglais, je n'ai pas de mal à me plonger dans un livre. <br /><br />
+
+          Je <b>nage</b> aussi depuis tout petit. C'est un sport qui me vide la
+          tête. Récemment, j'ai également commencé à grimper en bloc. C'est une
+          activité qui me permet de prendre de la hauteur.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <img
+        src="../images/goal.svg"
+        class="toggle-img"
+        onclick="toggleContent('content4')"
+        alt="Ma détermination et persévérance"
+      />
+      <div class="content" id="content4">
+        <p>
+          Je souhaite développer mes compétences en
+          <b>développement web</b> (dans un premier temps) et en gestion de
+          projet pour contribuer à des projets variés et ambitieux. Je garde
+          l'objectif de me <b>former en continu</b> et de m'ouvrir à des outils
+          que je ne maîtrise pas encore. <br /><br />Mon objectif est de pouvoir
+          mettre mon plein potentiel en action et d'évoluer dans un milieu
+          d'entraide. Je cherche à travailler dans des environnements
+          collaboratifs où l'innovation et la créativité sont encouragées.
+          <br /><br />Je suis motivé par l'idée de faire une différence et de
+          <b>contribuer positivement</b> à chaque projet auquel je participe.
+        </p>
+      </div>
+    </div>
 
     <div class="footer">
-      <h2 class="main"><a href="../index.html">Back to Main</a></h2>
+      <h2 class="main"><a href="../index.html">Back to main</a></h2>
       <h2 class="main"><a href="./resume.html">Poursuivre</a></h2>
     </div>
   </body>
+  <script src="../js/humain.js"></script>
 </html>

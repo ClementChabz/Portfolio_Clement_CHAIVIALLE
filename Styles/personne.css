@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid red;
-  }
+  } */
 
 
 
@@ -17,33 +17,6 @@ body {
     height: 100%;
 }
 
-/* .content {
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    background-color: #fff;
-    color: #333;
-}
-
-.toggle-btn {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    background-color: #9d75f9;
-    color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    display: inline-block; 
-}
-
-.section {
-    margin: 50px 0;
-} */
 h1.main{
     font-size: 3rem;
     top: 2vh;
@@ -69,6 +42,58 @@ h1.main{
     50% { scale: 1.05; }
     100% { scale: 1; }
 }
+
+
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    width: 75vw;
+    text-align: center;
+}
+.content.show {
+    opacity: 1;
+    max-height: 500px;
+    padding: 10px;
+}
+.toggle-img {
+    cursor: pointer;
+    width: 125px;
+    height: auto;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+
+.section {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section:first-of-type {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 h2.main{
     font-size: 2rem; 
@@ -103,6 +128,16 @@ h2.main{
 }
 
 
+@media screen and (max-width: 1000px){
+
+
+    h2.main {
+        bottom: -5px;
+        font-size: 1.15rem;
+    }
+}
+
+
 @media screen and (max-width: 480px){
     h1.main{
         /* border: 2px solid #111111; */
@@ -113,7 +148,15 @@ h2.main{
 
     h2.main {
         bottom: -5px;
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    .section{
+        height: 70vh;
+    }
+
+    .section:first-of-type {
+        height: 90vh;
     }
 }
 

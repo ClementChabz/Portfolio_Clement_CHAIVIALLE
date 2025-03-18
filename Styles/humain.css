@@ -2,9 +2,7 @@
     outline: 1px solid red;
   } */
 
-  html {
-    height: 100%;
-}
+
 
 body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
@@ -45,6 +43,80 @@ h1.main{
     100% { scale: 1; }
 }
 
+
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size:1.5rem;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+
+    color: #333;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    width: 75vw;
+    text-align: justify;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.content.show {
+    opacity: 1;
+    padding: 10px;
+
+}
+.toggle-img {
+    cursor: pointer;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+
+.section {
+    min-height: 70vh; /* La section peut grandir au-delà de 70vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transition: height 0.5s ease; /* Ajoute une transition douce à la hauteur */
+    overflow: hidden;
+}
+
+
+/* .section:first-of-type {
+    height: clamp(70vh,70vh,1000px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.citation {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.auteur{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.small{
+    font-size: 0.7rem;
+}
+
 h2.main{
     font-size: 2rem; 
     color: #fff;
@@ -78,6 +150,16 @@ h2.main{
 }
 
 
+@media screen and (max-width: 1000px){
+
+
+    h2.main {
+        bottom: -5px;
+        font-size: 1.15rem;
+    }
+}
+
+
 @media screen and (max-width: 480px){
     h1.main{
         /* border: 2px solid #111111; */
@@ -88,8 +170,26 @@ h2.main{
 
     h2.main {
         bottom: -5px;
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
+
+    .section{
+        height: 70vh;
+    }
+
+    .section:first-of-type {
+        height: 80vh;
+        margin-top: -20px;
+    }
+
+    .content{
+        font-size: 0.9rem;
+    }
+
+    .citation{
+        font-size: 0.9rem;
+    }
+
 }
 
 
@@ -107,3 +207,4 @@ h2 a{
     justify-content: space-around;
     margin-top: auto;
 }
+

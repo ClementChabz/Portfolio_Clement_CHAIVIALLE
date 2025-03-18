@@ -126,7 +126,9 @@ h2.main{
     }
 }
 
-
+i {
+    margin-top: auto;
+}
 
 @media screen and (max-width: 480px){
     .item{
