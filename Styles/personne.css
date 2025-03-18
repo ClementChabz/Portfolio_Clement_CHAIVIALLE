@@ -1,10 +1,8 @@
-/* * {
+* {
     outline: 1px solid red;
-  } */
+  }
 
-  html {
-    height: 100%;
-}
+
 
 body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
@@ -19,6 +17,33 @@ body {
     height: 100%;
 }
 
+/* .content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: #9d75f9;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: inline-block; 
+}
+
+.section {
+    margin: 50px 0;
+} */
 h1.main{
     font-size: 3rem;
     top: 2vh;

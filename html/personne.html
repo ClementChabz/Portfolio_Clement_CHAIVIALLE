@@ -1,18 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La personne</title>
     <link rel="stylesheet" href="../Styles/personne.css" />
+    <style>
+      .content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        margin-top: 20px;
+        padding: 0 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        background-color: #fff;
+        color: #333;
+        transition: ease, max-height 0.5s ease; /* Ajout de la transition */
+        width: 75vw; /* Ajustement de la largeur */
+      }
+      .content.show {
+        opacity: 1;
+        max-height: 500px; /* Ajustez cette valeur selon la hauteur de votre contenu */
+        padding: 10px;
+      }
+      .toggle-btn {
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        background-color: #9d75f9;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 2vh; /* Réduction de l'écart entre les boutons */
+        display: inline-block;
+      }
+      .section {
+        height: 60vh; /* Chaque section occupe toute la hauteur de la fenêtre */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
   </head>
 
   <body class="personne">
     <h1 class="main">Clément : La personne</h1>
 
+    <div class="section">
+      <button class="toggle-btn" onclick="toggleContent('content1')">
+        En savoir plus sur moi
+      </button>
+      <div class="content" id="content1">
+        <p>
+          Je suis Clément Chaivialle, une personne curieuse avec un grand côté
+          humain. En dehors de mes activités professionnelles et académiques, je
+          pratique la natation, l'escalade de bloc et joue de la guitare depuis
+          plus de 10 ans. Je suis quelqu'un de convivial, travailleur et
+          adaptable, ce qui me permet de m'intégrer facilement dans différents
+          environnements et de collaborer efficacement avec les autres.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <button class="toggle-btn" onclick="toggleContent('content2')">
+        Ma passion pour l'apprentissage
+      </button>
+      <div class="content" id="content2">
+        <p>
+          Je suis passionné par l'apprentissage et l'exploration de nouvelles
+          compétences, ce qui m'a conduit à m'investir dans divers projets
+          personnels et associatifs. Mon intérêt pour la technologie et
+          l'innovation m'a poussé à apprendre par moi-même des compétences en
+          programmation, électronique et impression 3D. J'aime relever des défis
+          et trouver des solutions créatives, ce qui se reflète dans mes projets
+          de conception et de développement.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <button class="toggle-btn" onclick="toggleContent('content3')">
+        Mes valeurs humaines
+      </button>
+      <div class="content" id="content3">
+        <p>
+          En tant que personne, je valorise les relations humaines et la
+          collaboration. J'aime travailler en équipe et partager mes
+          connaissances avec les autres. Mon côté humain se manifeste également
+          dans mon engagement pour la santé mentale et le bien-être, où j'ai
+          suivi des formations pour devenir sauveteur en santé mentale et
+          participer à des initiatives de prévention.
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <button class="toggle-btn" onclick="toggleContent('content4')">
+        Ma détermination et persévérance
+      </button>
+      <div class="content" id="content4">
+        <p>
+          Je suis déterminé et persévérant, toujours prêt à apprendre et à
+          m'améliorer. Mon parcours académique et professionnel montre ma
+          capacité à m'adapter et à exceller dans divers domaines. En résumé, je
+          suis une personne curieuse, humaine et polyvalente, prête à apporter
+          mes compétences et mon enthousiasme à votre équipe.
+        </p>
+      </div>
+    </div>
+
     <div class="footer">
-      <h2 class="main"><a href="../index.html">Back to Main</a></h2>
+      <h2 class="main"><a href="../index.html">Retour à l'accueil</a></h2>
       <h2 class="main"><a href="./resume.html">Poursuivre</a></h2>
     </div>
+
+    <script>
+      function toggleContent(id) {
+        var contents = document.querySelectorAll(".content");
+        contents.forEach(function (content) {
+          if (content.id !== id) {
+            content.classList.remove("show");
+          }
+        });
+        var content = document.getElementById(id);
+        content.classList.add("show");
+      }
+
+      window.addEventListener("scroll", function () {
+        var sections = document.querySelectorAll(".section");
+        sections.forEach(function (section, index) {
+          var rect = section.getBoundingClientRect();
+          var contentId = "content" + (index + 1);
+          var content = document.getElementById(contentId);
+          var scrollPercent = Math.min(
+            Math.max((window.innerHeight - rect.top) / window.innerHeight, 0),
+            1
+          );
+          content.style.opacity = scrollPercent;
+          content.style.maxHeight = scrollPercent * 500 + "px"; // Ajustez cette valeur selon la hauteur de votre contenu
+        });
+      });
+
+      // Ouvrir le premier bouton au chargement de la page
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleContent("content1");
+      });
+    </script>
   </body>
 </html>
