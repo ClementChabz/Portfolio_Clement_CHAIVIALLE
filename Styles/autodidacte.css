@@ -1,12 +1,10 @@
 /* * {
     outline: 1px solid red;
-  } */
-
-  html {
-    height: 100%;
 }
+ */
 
-body {
+
+ body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
     background-color: #fde4ea;
     min-height: 100vh;
@@ -45,6 +43,129 @@ h1.main{
     100% { scale: 1; }
 }
 
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    max-height: 1000px;  /* Une valeur suffisante pour afficher le contenu */
+    overflow: hidden;
+    transform: translateY(0); /* Position de départ */
+    transition: opacity 0.5s ease-in-out, 
+                max-height 0.5s ease-in-out, 
+                transform 0.5s ease-in-out;
+
+    width: 75vw;
+
+    overflow: hidden;
+    color: #333;
+    font-size:1.5rem;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease,
+
+}
+.content.show {
+    opacity: 1;
+    max-height: 1000px; /* Suffisant pour contenir le texte */
+    transform: translateY(0); /* Remonte à sa position normale */
+}
+.img {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.printing {
+    border-radius: 40%;
+    height: 5rem;
+    width: auto;
+}
+
+.section {
+    min-height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+
+/* .section:first-of-type {
+    height: clamp(70vh,70vh,1000px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+
+
+.header__section p {
+    margin: 0; /*sinon il y a de gros espaces entre les élements */
+}
+
+.header__section {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    gap: 10px;
+}
+
+.school__link {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.title__section {
+
+}
+
+.date__section  {
+    font-size: smaller;
+}
+
+.lieu__section{
+    font-size: small;
+}
+
+
+
+.hero__section p {
+    margin: 8px; /*sinon il y a de gros espaces entre les élements */
+}
+
+.hero__section {
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.footer__section {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+
+
 h2.main{
     font-size: 2rem; 
     color: #fff;
@@ -78,18 +199,48 @@ h2.main{
 }
 
 
+@media screen and (max-width: 1000px){
+
+
+    h2.main {
+        bottom: -5px;
+        font-size: 1.15rem;
+    }
+}
+
+
+
 @media screen and (max-width: 480px){
     h1.main{
         /* border: 2px solid #111111; */
         top: 0px;
         padding: 10px 20px;
         font-size: 1.75rem;
+        margin-bottom: 50px;
     }
 
     h2.main {
         bottom: -5px;
-        font-size: 1.5rem;
+        font-size: 1.15rem;
     }
+
+    .section{
+
+    }
+
+    .section:first-of-type {
+
+        margin-top: -20px;
+    }
+
+    .content{
+        font-size: 0.9rem;
+    }
+
+    .citation{
+        font-size: 0.9rem;
+    }
+
 }
 
 
@@ -107,3 +258,4 @@ h2 a{
     justify-content: space-around;
     margin-top: auto;
 }
+

@@ -173,6 +173,7 @@ h2.main{
         top: 0px;
         padding: 10px 20px;
         font-size: 1.75rem;
+        margin-bottom: 50px;
     }
 
     h2.main {
@@ -181,11 +182,10 @@ h2.main{
     }
 
     .section{
-        height: 70vh;
+
     }
 
     .section:first-of-type {
-        height: 80vh;
         margin-top: -20px;
     }
 

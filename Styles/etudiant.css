@@ -49,9 +49,9 @@ h1.main{
     flex-direction: column;
     justify-content: space-evenly;
     opacity: 1;
-    max-height: 1000px;  /* Une valeur suffisante pour afficher le contenu */
+    max-height: 1000px;  
     overflow: hidden;
-    transform: translateY(0); /* Position de départ */
+    transform: translateY(0); /* départ */
     transition: opacity 0.5s ease-in-out, 
                 max-height 0.5s ease-in-out, 
                 transform 0.5s ease-in-out;
@@ -222,12 +222,8 @@ h2.main{
         font-size: 1.15rem;
     }
 
-    .section{
-        height: 70vh;
-    }
 
     .section:first-of-type {
-        height: 80vh;
         margin-top: -20px;
     }
 

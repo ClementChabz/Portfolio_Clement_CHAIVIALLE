@@ -55,7 +55,7 @@ h1.main{
     
 }
 
-.coor p{
+.coor p {
     text-align: center;
     font-size: 2rem;
     color: #fff;
@@ -63,8 +63,12 @@ h1.main{
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    width:clamp(300px, 30%, 400px) ;
+    width: auto; /* La largeur s'ajuste à la longueur du texte */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur pour éviter que le texte ne touche les bords */
+    max-width: 100%; /* Empêche le texte de sortir de la boîte */
 }
+
+
 
 .coor a {
 

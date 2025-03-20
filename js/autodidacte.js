@@ -35,5 +35,3 @@ window.addEventListener("scroll", function () {
         img.style.transform = `scale(${scale})`;
     });
 });
-
-
