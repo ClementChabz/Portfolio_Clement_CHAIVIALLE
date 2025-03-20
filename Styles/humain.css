@@ -45,32 +45,39 @@ h1.main{
 
 
 .content {
-    opacity: 0;
-    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    max-height: 1000px;  /* Une valeur suffisante pour afficher le contenu */
     overflow: hidden;
-    font-size:1.5rem;
-    margin-top: 20px;
-    padding: 0 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
+    transform: translateY(0); /* Position de départ */
+    transition: opacity 0.5s ease-in-out, 
+                max-height 0.5s ease-in-out, 
+                transform 0.5s ease-in-out;
 
-    color: #333;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
     width: 75vw;
-    text-align: justify;
+
+    overflow: hidden;
+    color: #333;
+    font-size:1.5rem;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    height: fit-content;
+    transition: opacity 0.5s ease,
+
 }
 .content.show {
     opacity: 1;
-    padding: 10px;
-
+    max-height: 1000px; /* Suffisant pour contenir le texte */
+    transform: translateY(0); /* Remonte à sa position normale */
 }
-.toggle-img {
-    cursor: pointer;
+.img {
     width: 125px;
     height: 125px;
     margin-bottom: 2vh;
@@ -83,13 +90,13 @@ h1.main{
 
 
 .section {
-    min-height: 70vh; /* La section peut grandir au-delà de 70vh */
+    min-height: 70vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    transition: height 0.5s ease; /* Ajoute une transition douce à la hauteur */
+    transition: height 0.5s ease;
     overflow: hidden;
 }
 
