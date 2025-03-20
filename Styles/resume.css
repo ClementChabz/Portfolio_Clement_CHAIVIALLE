@@ -212,6 +212,11 @@ h2 a{
 
 }
 
+button:focus, button:active {
+    outline: none;
+    box-shadow: none;
+}
+
 #next{
     left:unset;
     text-align: end;
