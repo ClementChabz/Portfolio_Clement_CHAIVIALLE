@@ -2,9 +2,9 @@
     outline: 1px solid red;
   } */
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body.resume {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
@@ -206,6 +206,9 @@ h2 a{
     border: none;
     font-size: xxx-large;
     font-weight: bold;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+
 
 }
 
