@@ -3,8 +3,8 @@
   } */
 
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* Supprime l'effet bleu */
-    -webkit-user-select: none; /* Empêche la sélection de texte accidentelle */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-user-select: none; 
     user-select: none;
 }
 
