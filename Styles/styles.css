@@ -242,6 +242,14 @@ body {
 }
 
 
+@media screen and (max-width: 758px){
+    #navbar__logo{
+        font-size: 1.25rem;
+
+    }
+
+}
+
 /* Hero Section CSS */
 .main {
     display: flex;
@@ -474,8 +482,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 70vw;
+    max-width: 400px;
     margin-bottom: 20px;
     border-radius: 40%;
     z-index: 0;
@@ -519,20 +528,6 @@ body {
     width: 100%;
     height: auto;
     filter:contrast(1.1);
- 
-}
-
-@media screen and (max-width: 480px){
-
-    .pic__wrapper{
-        /* border: 2px solid #fff; */
-        height: auto;
-        width: 70vw;
-    }
-
-    .pic__container{
-        top: -80px;
-    }
 }
 
 

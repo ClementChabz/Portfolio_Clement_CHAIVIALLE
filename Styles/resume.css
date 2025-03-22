@@ -132,14 +132,6 @@ i {
     margin-top: auto;
 }
 
-@media screen and (max-width: 480px){
-    .item{
-        width: 200px;
-        height:85%;
-    }
-
-}
-
 
 .item h1{
     font-size: 2rem;
@@ -186,6 +178,33 @@ i {
     /* border: 2px solid #000; */
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 480px){
+    .item{
+        width: 200px;
+        height:68%;
+    }
+
+    .item h1{
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+
+    .item p {
+        margin-top: auto;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: 'Kumbh Sans', sans-serif;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        /* border: 2px solid #000; */
+    }
+}
+
+
+
 
 #bold {
     font-weight: 500;
