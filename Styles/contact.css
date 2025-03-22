@@ -2,9 +2,6 @@
     outline: 1px solid red;
   } */
 
-html{
-    height: auto;
-}
 
 body {
     background-image: linear-gradient(to top right, #9d75f9,#f6c9d3);
